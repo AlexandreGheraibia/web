@@ -1,0 +1,68 @@
+#container{
+	
+	/*overflow-y: scroll;*/
+	border:1px solid black;
+	width:200px;
+	height:180px;
+	/*overflow-x: scroll*/
+}
+.octogone {
+   padding-top:5px;
+   width:100px;
+   height:60px;
+   /*backface-visibility: visible;*/
+  
+   transform-style: preserve-3d;
+  
+}
+.face {
+   display: block;
+   position: absolute;
+   width: 100px;
+   height: 55px;
+   border: none;
+   line-height: 55px;
+   font-family: sans-serif;
+  /* font-size: 60px;*/
+   color: white;
+   text-align: center;
+   background: white;
+   color: black;
+   border:1px solid black;
+  
+}
+
+
+
+.front {
+  
+   transform: translateZ(70px);
+}
+.front-top{
+	
+	transform: rotateX(45deg) translateZ(70px) ;
+}
+.front-bottom{
+	
+	transform: rotateX(-45deg) translateZ(70px) ;
+}
+.back {
+   transform: translateZ(-70px) rotateX(180deg) ;
+}
+
+.back-top {
+   transform: rotateX(135deg) translateZ(70px)  ;
+}
+
+.back-bottom {
+  
+   transform: rotateX(225deg) translateZ(70px) ;
+}
+
+.top {
+   transform: rotateX(90deg) translateZ(70px);
+}
+
+.bottom {
+   transform: rotateX(-90deg) translateZ(70px);
+}
